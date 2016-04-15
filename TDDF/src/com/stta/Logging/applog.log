@@ -1,0 +1,13 @@
+2016-04-15 13:43:16,963 - rootLogger - INFO - All Excel Files Initialised successfully.
+2016-04-15 13:43:16,970 - rootLogger - INFO - Execution started for SuiteOneBase.
+2016-04-15 13:43:17,128 - rootLogger - INFO - All Excel Files Initialised successfully.
+2016-04-15 13:43:17,129 - rootLogger - INFO - SuiteOneCaseOne : Execution started.
+2016-04-15 13:43:17,160 - rootLogger - INFO - SuiteOneCaseOne : Actual Value 21 and expected value 22 Not match. Test data set failed.
+2016-04-15 13:43:17,200 - rootLogger - INFO - SuiteOneCaseOne : Reporting test data set line 1 as FAIL In excel.
+2016-04-15 13:43:17,220 - rootLogger - INFO - SuiteOneCaseOne : DataToRun = N for data set line 2 So skipping Its execution.
+2016-04-15 13:43:17,221 - rootLogger - INFO - SuiteOneCaseOne : Reporting test data set line 2 as SKIP In excel.
+2016-04-15 13:43:17,238 - rootLogger - INFO - SuiteOneCaseOne : Reporting test case as FAIL In excel.
+2016-04-15 13:43:17,526 - rootLogger - INFO - All Excel Files Initialised successfully.
+2016-04-15 13:43:17,845 - rootLogger - INFO - All Excel Files Initialised successfully.
+2016-04-15 13:43:17,876 - rootLogger - INFO - All Excel Files Initialised successfully.
+2016-04-15 13:43:18,126 - rootLogger - INFO - All Excel Files Initialised successfully.
