@@ -4,6 +4,7 @@
 
 	<suite-files>
 <!-- If you have more test suites, Please add them bellow. -->
+		<suite-file path="./ExampleCases.xml" />
    		<suite-file path="./SuiteOne.xml" />
    		<suite-file path="./SuiteTwo.xml" />
    

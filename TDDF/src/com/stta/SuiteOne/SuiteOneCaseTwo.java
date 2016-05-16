@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import com.stta.Utility.Read_XLS;
 import com.stta.Utility.SuiteUtility;
 
@@ -76,16 +77,10 @@ public class SuiteOneCaseTwo extends SuiteOneBase{
 		int ValueThree = Integer.parseInt(DataCol3);
 		int ExpectedResultInt =  Integer.parseInt(ExpectedResult);
 				
-		//Subtract the values.
-		int ActualResult = ValueOne-ValueTwo-ValueThree;
-		//Compare actual and expected values.
-		if(!(ActualResult==ExpectedResultInt)){
-			//If expected and actual results not match, Set flag Testfail=true.
-			Testfail=true;
-			//If result Is fail then test failure will be captured Inside s_assert object reference.
-			//This soft assertion will not stop your test execution.
-			s_assert.assertEquals(ActualResult, ExpectedResultInt, ActualResult+" And "+ExpectedResultInt+" Not Match");
-		}
+		//To Initialize Firefox browser.
+		loadWebBrowser();
+		//To navigate to URL.
+		driver.get(Param.getProperty("siteURL"));
 		
 		if(Testfail){
 			//At last, test data assertion failure will be reported In testNG reports and It will mark your test data, test case and test suite as fail.
@@ -128,6 +123,8 @@ public class SuiteOneCaseTwo extends SuiteOneBase{
 	//To report result as pass or fail for test cases In TestCasesList sheet.
 	@AfterTest
 	public void closeBrowser(){
+		//To Close the web browser at the end of test.
+		closeWebBrowser();
 		if(TestCasePass){
 			SuiteUtility.WriteResultUtility(FilePath, SheetName, "Pass/Fail/Skip", TestCaseName, "PASS");
 		}

@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.stta.SuiteOne.SuiteOneCaseOne">
+      <class name="com.stta.ExampleCases.Assertion">
         <methods>
-          <include name="checkCaseToRun"/>
-          <include name="checkSuiteToRun"/>
-          <include name="SuiteOneCaseOneTest"/>
+          <include name="loadWebPage"/>
+          <include name="Assert_Method_2"/>
+          <include name="Assert_Method_3"/>
+          <include name="exitBrowser"/>
+          <include name="Assert_Method_6"/>
         </methods>
-      </class> <!-- com.stta.SuiteOne.SuiteOneCaseOne -->
+      </class> <!-- com.stta.ExampleCases.Assertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

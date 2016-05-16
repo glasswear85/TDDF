@@ -16,29 +16,9 @@
           <include name="reporterDataResults"/>
           <include name="checkCaseToRun"/>
           <include name="closeBrowser"/>
-          <include name="SuiteOneCaseOneTest" invocation-numbers="0 1"/>
+          <include name="SuiteOneCaseOneTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.stta.SuiteOne.SuiteOneCaseOne -->
     </classes>
   </test> <!-- SuiteOneCaseOne(failed) -->
-  <test name="SuiteOneCaseTwo(failed)">
-    <classes>
-      <class name="com.stta.SuiteOne.SuiteOneCaseTwo">
-        <methods>
-          <include name="reporterDataResults"/>
-          <include name="closeBrowser"/>
-          <include name="checkCaseToRun"/>
-          <include name="SuiteOneCaseTwoTest" invocation-numbers="0"/>
-          <include name="checkSuiteToRun"/>
-        </methods>
-      </class> <!-- com.stta.SuiteOne.SuiteOneCaseTwo -->
-      <class name="com.stta.SuiteOne.SuiteOneCaseOne">
-        <methods>
-          <include name="reporterDataResults"/>
-          <include name="checkCaseToRun"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.stta.SuiteOne.SuiteOneCaseOne -->
-    </classes>
-  </test> <!-- SuiteOneCaseTwo(failed) -->
 </suite> <!-- Failed suite [SuiteOne] -->

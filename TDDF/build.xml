@@ -7,7 +7,7 @@
     <property environment="appenv"/>    
     <property name="project.home" value="${basedir}"/>
 	<!-- Set JarFiles Folder's Path. -->
-	<property name="project.jars" value="D:\Git\TDDF\JarFiles"/>
+	<property name="project.jars" value="${basedir}\JarFiles"/>
     <property name="report.dest" value="${project.home}/build"/>
     <property name="report.src" value="${project.home}/src"/>
 	<property name="report.result" value="test-output"/>

@@ -1,10 +1,10 @@
+//Find More Tutorials On WebDriver at -> http://software-testing-tutorials-automation.blogspot.com
 package com.stta.SuiteOne;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -85,20 +85,37 @@ public class SuiteOneCaseOne extends SuiteOneBase{
 		int ExpectedResultInt =  Integer.parseInt(ExpectedResult);
 		
 		//To Initialize Firefox browser.
-		WebDriver driver = new FirefoxDriver();
-		//To set time out 15 seconds.
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		//To maximize the browser.
-		driver.manage().window().maximize();
-		//To navigate to URL.
-		driver.get("http://only-testing-blog.blogspot.com");
-		//To close the browser.
-		driver.close();
+		loadWebBrowser();		
 		
-		if(Testfail){
+		//To navigate to URL. It will read site URL from Param.properties file
+		driver.get(Param.getProperty("siteURL")+"/2014/04/calc.html");		
+		
+		//Simple calc test.
+		driver.findElement(By.xpath("//input[@id='Resultbox']")).clear();
+		//Builded Custom xpath of calc button using "ValueOne" which Is retrieved from excel file.
+		driver.findElement(By.xpath("//input[@id='"+ValueOne+"']")).click();
+		driver.findElement(By.xpath("//input[@id='plus']")).click();
+		//Builded Custom xpath of calc button using "ValueTwo" which Is retrieved from excel file.
+		driver.findElement(By.xpath("//input[@id='"+ValueTwo+"']")).click();
+		driver.findElement(By.xpath("//input[@id='plus']")).click();
+		//Builded Custom xpath of calc button using "ValueThree" which Is retrieved from excel file.
+		driver.findElement(By.xpath("//input[@id='"+ValueThree+"']")).click();
+		driver.findElement(By.xpath("//input[@id='equals']")).click();
+		String Result = driver.findElement(By.xpath("//input[@id='Resultbox']")).getAttribute("value");
+		System.out.println(Result);
+		Add_Log.info("Calc Sum Test Result Is :"+ Result);
+		
+		//Assert.assertEquals(Result, ExpectedResult);
+		
+		s_assert.assertEquals(Result, ExpectedResult, "Two numbers are not equal");
+		
+		
+		//if(Testfail){
 			//At last, test data assertion failure will be reported In testNG reports and It will mark your test data, test case and test suite as fail.
-			s_assert.assertAll();		
-		}
+			//s_assert.assertAll();		
+		//}
+		Add_Log.info("Test continue");
+		
 	}
 	
 	//@AfterMethod method will be executed after execution of @Test method every time.
@@ -138,14 +155,15 @@ public class SuiteOneCaseOne extends SuiteOneBase{
 	//To report result as pass or fail for test cases In TestCasesList sheet.
 	@AfterTest
 	public void closeBrowser(){
+		//To Close the web browser at the end of test.
+		closeWebBrowser();
 		if(TestCasePass){
 			Add_Log.info(TestCaseName+" : Reporting test case as PASS In excel.");
 			SuiteUtility.WriteResultUtility(FilePath, SheetName, "Pass/Fail/Skip", TestCaseName, "PASS");
 		}
 		else{
 			Add_Log.info(TestCaseName+" : Reporting test case as FAIL In excel.");
-			SuiteUtility.WriteResultUtility(FilePath, SheetName, "Pass/Fail/Skip", TestCaseName, "FAIL");
-			
-		}		
+			SuiteUtility.WriteResultUtility(FilePath, SheetName, "Pass/Fail/Skip", TestCaseName, "FAIL");			
+		}
 	}
 }

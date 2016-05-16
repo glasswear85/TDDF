@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ExampleCases]">
+  <test name="Assertion(failed)">
+    <classes>
+      <class name="com.stta.ExampleCases.Assertion">
+        <methods>
+          <include name="Assert_Method_1"/>
+          <include name="Assert_Method_2"/>
+        </methods>
+      </class> <!-- com.stta.ExampleCases.Assertion -->
+    </classes>
+  </test> <!-- Assertion(failed) -->
+</suite> <!-- Failed suite [ExampleCases] -->
