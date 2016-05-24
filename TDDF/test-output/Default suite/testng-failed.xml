@@ -3,15 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.stta.ExampleCases.Assertion">
+      <class name="com.stta.ExampleCases.HardAssertion">
         <methods>
-          <include name="loadWebPage"/>
           <include name="Assert_Method_2"/>
+          <include name="Assert_Method_7"/>
+          <include name="loadWebPage"/>
           <include name="Assert_Method_3"/>
-          <include name="exitBrowser"/>
+          <include name="Assert_Method_10"/>
+          <include name="Assert_Method_11"/>
           <include name="Assert_Method_6"/>
+          <include name="exitBrowser"/>
         </methods>
-      </class> <!-- com.stta.ExampleCases.Assertion -->
+      </class> <!-- com.stta.ExampleCases.HardAssertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

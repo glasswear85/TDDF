@@ -1,21 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" total="6" passed="3">
+<testng-results skipped="0" failed="6" total="12" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22818" started-at="2016-05-13T08:37:19Z" finished-at="2016-05-13T08:37:42Z">
+  <suite name="Default suite" duration-ms="12105" started-at="2016-05-18T02:41:50Z" finished-at="2016-05-18T02:42:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22818" started-at="2016-05-13T08:37:19Z" finished-at="2016-05-13T08:37:42Z">
-      <class name="com.stta.ExampleCases.Assertion">
-        <test-method status="PASS" signature="loadWebPage()[pri:0, instance:com.stta.ExampleCases.Assertion@cf93bb]" name="loadWebPage" is-config="true" duration-ms="21258" started-at="2016-05-13T15:37:19Z" finished-at="2016-05-13T15:37:41Z">
+    <test name="Default test" duration-ms="12105" started-at="2016-05-18T02:41:50Z" finished-at="2016-05-18T02:42:02Z">
+      <class name="com.stta.ExampleCases.HardAssertion">
+        <test-method status="PASS" signature="loadWebPage()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="loadWebPage" is-config="true" duration-ms="9746" started-at="2016-05-18T09:41:50Z" finished-at="2016-05-18T09:41:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadWebPage -->
-        <test-method status="PASS" signature="Assert_Method_1()[pri:0, instance:com.stta.ExampleCases.Assertion@cf93bb]" name="Assert_Method_1" duration-ms="41" started-at="2016-05-13T15:37:41Z" finished-at="2016-05-13T15:37:41Z">
+        <test-method status="PASS" signature="Assert_Method_1()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_1" duration-ms="22" started-at="2016-05-18T09:41:59Z" finished-at="2016-05-18T09:42:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Assert_Method_1 -->
-        <test-method status="FAIL" signature="Assert_Method_2()[pri:0, instance:com.stta.ExampleCases.Assertion@cf93bb]" name="Assert_Method_2" duration-ms="4" started-at="2016-05-13T15:37:41Z" finished-at="2016-05-13T15:37:41Z">
+        <test-method status="FAIL" signature="Assert_Method_10()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_10" duration-ms="766" started-at="2016-05-18T09:42:00Z" finished-at="2016-05-18T09:42:00Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotSame(Assert.java:492)
+	at org.testng.Assert.assertNull(Assert.java:428)
+	at org.testng.Assert.assertNull(Assert.java:417)
+	at com.stta.ExampleCases.HardAssertion.Assert_Method_10(HardAssertion.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assert_Method_10 -->
+        <test-method status="FAIL" signature="Assert_Method_11()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_11" duration-ms="230" started-at="2016-05-18T09:42:00Z" finished-at="2016-05-18T09:42:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected object to not be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:406)
+	at org.testng.Assert.assertNotNull(Assert.java:391)
+	at com.stta.ExampleCases.HardAssertion.Assert_Method_11(HardAssertion.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assert_Method_11 -->
+        <test-method status="PASS" signature="Assert_Method_12()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_12" duration-ms="124" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assert_Method_12 -->
+        <test-method status="FAIL" signature="Assert_Method_2()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_2" duration-ms="1" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:01Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Test1] but found [Test]]]>
@@ -27,7 +114,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:178)
 	at org.testng.Assert.assertEquals(Assert.java:188)
-	at com.stta.ExampleCases.Assertion.Assert_Method_2(Assertion.java:40)
+	at com.stta.ExampleCases.HardAssertion.Assert_Method_2(HardAssertion.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -58,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Assert_Method_2 -->
-        <test-method status="FAIL" signature="Assert_Method_3()[pri:0, instance:com.stta.ExampleCases.Assertion@cf93bb]" name="Assert_Method_3" duration-ms="614" started-at="2016-05-13T15:37:41Z" finished-at="2016-05-13T15:37:41Z">
+        <test-method status="FAIL" signature="Assert_Method_3()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_3" duration-ms="111" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:01Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected and Actual are match]]>
@@ -67,7 +154,7 @@
               <![CDATA[java.lang.AssertionError: Expected and Actual are match
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.assertNotEquals(Assert.java:856)
-	at com.stta.ExampleCases.Assertion.Assert_Method_3(Assertion.java:50)
+	at com.stta.ExampleCases.HardAssertion.Assert_Method_3(HardAssertion.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -98,15 +185,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Assert_Method_3 -->
-        <test-method status="PASS" signature="Assert_Method_4()[pri:0, instance:com.stta.ExampleCases.Assertion@cf93bb]" name="Assert_Method_4" duration-ms="368" started-at="2016-05-13T15:37:41Z" finished-at="2016-05-13T15:37:42Z">
+        <test-method status="PASS" signature="Assert_Method_4()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_4" duration-ms="140" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Assert_Method_4 -->
-        <test-method status="PASS" signature="Assert_Method_5()[pri:0, instance:com.stta.ExampleCases.Assertion@cf93bb]" name="Assert_Method_5" duration-ms="124" started-at="2016-05-13T15:37:42Z" finished-at="2016-05-13T15:37:42Z">
+        <test-method status="PASS" signature="Assert_Method_5()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_5" duration-ms="87" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Assert_Method_5 -->
-        <test-method status="FAIL" signature="Assert_Method_6()[pri:0, instance:com.stta.ExampleCases.Assertion@cf93bb]" name="Assert_Method_6" duration-ms="132" started-at="2016-05-13T15:37:42Z" finished-at="2016-05-13T15:37:42Z">
+        <test-method status="FAIL" signature="Assert_Method_6()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_6" duration-ms="103" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:01Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Car checkbox is not selected expected [true] but found [false]]]>
@@ -116,7 +203,7 @@
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.stta.ExampleCases.Assertion.Assert_Method_6(Assertion.java:81)
+	at com.stta.ExampleCases.HardAssertion.Assert_Method_6(HardAssertion.java:81)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -147,11 +234,60 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Assert_Method_6 -->
-        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.stta.ExampleCases.Assertion@cf93bb]" name="exitBrowser" is-config="true" duration-ms="115" started-at="2016-05-13T15:37:42Z" finished-at="2016-05-13T15:37:42Z">
+        <test-method status="FAIL" signature="Assert_Method_7()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_7" duration-ms="154" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:01Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Bike checkbox is selected expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Bike checkbox is selected expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at com.stta.ExampleCases.HardAssertion.Assert_Method_7(HardAssertion.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assert_Method_7 -->
+        <test-method status="PASS" signature="Assert_Method_8()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_8" duration-ms="145" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assert_Method_8 -->
+        <test-method status="PASS" signature="Assert_Method_9()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="Assert_Method_9" duration-ms="169" started-at="2016-05-18T09:42:01Z" finished-at="2016-05-18T09:42:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assert_Method_9 -->
+        <test-method status="PASS" signature="exitBrowser()[pri:0, instance:com.stta.ExampleCases.HardAssertion@7be63f]" name="exitBrowser" is-config="true" duration-ms="115" started-at="2016-05-18T09:42:02Z" finished-at="2016-05-18T09:42:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitBrowser -->
-      </class> <!-- com.stta.ExampleCases.Assertion -->
+      </class> <!-- com.stta.ExampleCases.HardAssertion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
