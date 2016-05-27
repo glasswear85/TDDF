@@ -14,11 +14,13 @@ import org.testng.annotations.Test;
 
 public class HardAssertion {
 	
-	WebDriver driver = new FirefoxDriver();
+	public static WebDriver driver=null;
 	
 	@BeforeTest
 	public void loadWebPage()
 	{
+		System.setProperty("webdriver.ie.driver","\\Git\\TDDF\\BrowserDrivers\\IEDriverServer.exe");
+		driver = new InternetExplorerDriver();
 		driver.manage().window().maximize();
 		driver.get("http://only-testing-blog.blogspot.in/2014/01/textbox.html");
 	}
